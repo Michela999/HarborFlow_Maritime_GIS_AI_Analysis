@@ -50,19 +50,26 @@ Cybersecurity: Python anomaly detection & risk simulations
 Documentation: GitHub, Markdown, screenshots
 
 Phase Workflow
-Phase 0 – Initial Setup
 
-Create folder structure
+## Phase 0 Log
+**Date:** 2026-01-17
+**Phase:** 0 – Initial Setup
 
-Initialize ArcGIS Pro project & geodatabase
+**Tasks Completed:**
+- Folder structure verified
+- ArcGIS Pro project and geodatabase created
+- Base layers loaded (Ports, Coastline, Land Scale Rank)
+- Initial attribute tables reviewed
+- Screenshots saved in docs/screens/phase0/
 
-Load base layers (ports, coastline, land features)
+**Insights:**
+- Base layers successfully configured
+- Ready for Phase 1
 
-Take initial screenshots
+**Screenshots Added:**
+- docs/screens/phase0/global_map_layout.png
+- docs/screens/phase0/initial_setup.png
 
-Example Screenshots
-![Phase 0 – Global Map Layout](docs/screens/phase0/day0_global_map_layout.png)
-![Phase 0 – Initial Setup](docs/screens/phase0/day0_initialsetup.png)
 
 Phase 1 – Data Import & Exploration
 
