@@ -48,3 +48,4 @@ Thumbs.db
 *.raster
 *.cache
 *.bak
+data/.ipynb_checkpoints/
