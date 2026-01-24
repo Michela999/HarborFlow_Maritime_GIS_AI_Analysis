@@ -14,8 +14,7 @@ GpMessages/
 
 # Raster & cache
 *.tif
-*.tiff
-*.img
+*.tiff*.img
 *.aux
 *.ovr
 *.rrd
@@ -27,10 +26,13 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
-# Data outputs
-data/raw/
-data/processed/
-data/cleaned/
+# Ignore all data files
+data/**
+
+# But keep folder structure
+!data/.gitkeep
+!data/**/.gitkeep
+
 
 # OS
 .DS_Store
