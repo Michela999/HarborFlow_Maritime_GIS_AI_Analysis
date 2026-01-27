@@ -90,33 +90,143 @@ Phase Workflow
 
 ##### **PHASE 1 LOG**
 
-**Date:** 2026-01-23
+**🔹 PHASE 1 LOG**
 
-**Phase:** 1 – Data Import \& Exploration
 
-**Tasks Completed:**
 
-\- Created folders: data/raw/weather and data/raw/maintenance
+**Date: 2026-01-23**
 
-\- Downloaded hourly weather data for Livorno (Oct 2023) using Open-Meteo API
+**Phase: 1 – Data Import \& Exploration (in progress)**
 
-\- Saved CSV: data/raw/weather/weather\_openmeteo\_livorno\_oct2023.csv
 
-\- Jupyter notebook executed successfully, outputs verified
 
-**Screenshots Added:**
+**Tasks Completed**
 
-docs/screens/phase1/01\_weather\_download\_livorno.png
 
-docs/screens/phase1/02\_weather\_download\_livorno.png
 
-**Insights:**
+**Imported AIS vessel traffic data for the Port of Livorno**
 
-\- Folder structure for raw data verified
 
-\- Weather data successfully imported and saved
 
-\- Project ready to expand to grid-based weather download and ArcGIS layer import
+**data/raw/ais/ais\_ports\_global\_oct2023/Livorno.csv**
+
+
+
+**Downloaded historical weather data for Livorno (Oct 2023) using Open-Meteo API**
+
+
+
+**data/raw/weather/weather\_openmeteo\_livorno\_oct2023.csv**
+
+
+
+**Created raw data folders:**
+
+
+
+**data/raw/weather/**
+
+
+
+**data/raw/maintenance/**
+
+
+
+**Executed AIS Exploratory Data Analysis (EDA) in Python (Jupyter Notebook):**
+
+
+
+**Dataset structure and datatypes inspected**
+
+
+
+**Missing values and duplicate checks completed**
+
+
+
+**Pre-cleaning visualizations generated**
+
+
+
+**Insights / Key Observations**
+
+
+
+**AIS dataset contains 19,700 records across 45 attributes**
+
+
+
+**No missing values or duplicate rows detected at this stage**
+
+
+
+**Speed distribution and spatial clustering clearly reflect port-area operations**
+
+
+
+**AIS data quality is sufficient to proceed with cleaning and integration**
+
+
+
+**Outputs Added (Pre-cleaning):**
+
+
+
+**AIS – Exploratory Data Analysis**
+
+
+
+**docs/screens/phase1/ais\_ship\_count\_time.png**
+
+
+
+**docs/screens/phase1/ais\_speed\_distribution.png**
+
+
+
+**docs/screens/phase1/ais\_vessel\_type\_frequency.png**
+
+
+
+**docs/screens/phase1/ais\_positions.png**
+
+
+
+**docs/screens/phase1/ais\_summary\_statistics\_before\_cleaning.csv**
+
+
+
+**Weather – Data Download (structure only, no EDA)**
+
+
+
+**docs/screens/phase1/01\_weather\_download\_livorno.png**
+
+
+
+**docs/screens/phase1/02\_weather\_download\_livorno.png**
+
+
+
+**Phase Status**
+
+
+
+**🟡 In progress**
+
+**Next steps:**
+
+
+
+**Weather EDA (Python)**
+
+
+
+**Maintenance proxy dataset creation \& EDA**
+
+
+
+**ArcGIS Pro raw-layer visualization**
 
 
 
