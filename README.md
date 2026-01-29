@@ -1,110 +1,74 @@
-HarborFlow – Maritime GIS & AI Analysis
+# HarborFlow — Maritime GIS & AI Analysis
 
-HarborFlow is a Maritime GIS & AI project focused on analyzing vessel movements, port activity, weather conditions, and maintenance patterns.
+**HarborFlow** is a modular, research-driven project exploring how **GIS, maritime data, and AI** can be combined to analyze harbor environments, vessel movement, and operational patterns.
 
-The project integrates GIS mapping, Python analytics, SQL, and AI/ML to produce operational insights and portfolio-ready outputs for the maritime and logistics sectors.
+The repository is structured to support **incremental development**, starting from geospatial foundations and evolving toward predictive and AI-assisted maritime insights.
 
-Project Goals
+---
 
-Analyze maritime traffic and port activity using AIS data
+## 🚢 Project Scope
 
-Evaluate weather impacts on vessel behavior
+- Maritime geospatial analysis using **ArcGIS Pro**
+- Integration of **AIS, environmental, and infrastructure data**
+- Progressive pipeline toward **AI-assisted harbor intelligence**
+- Clear separation between **analysis, documentation, and visualization**
 
-Simulate and study vessel maintenance patterns
+---
 
-Visualize spatial dynamics with GIS
+## 🧭 Development Phases (High-Level)
 
-Build foundations for predictive maintenance and route optimization
+| Phase | Focus |
+|------|------|
+| **Phase 0** | GIS foundations, basemaps, and spatial data validation |
+| **Phase 1** | Harbor-level spatial analysis & data structuring |
+| **Phase 2** | AI-ready datasets & feature engineering *(planned)* |
+| **Phase 3** | Predictive modeling & decision support *(planned)* |
 
-Document a complete, professional data workflow
+📄 **Detailed technical documentation is available in `/docs`.**
 
-Repository Overview
+---
 
+## 🗂 Repository Structure
+
+```text
 HarborFlow_Maritime_GIS_AI_Analysis/
 │
-├─ data/
-│   ├─ raw/          # Source datasets (AIS, weather, maintenance)
-│   ├─ cleaned/      # Cleaned datasets (generated)
-│   └─ processed/    # Feature-ready datasets (generated)
+├── README.md
+├── docs/
+│   ├── phase0L.md
+│   ├── phase1L.md
+│   └── screens/
 │
-├─ docs/
-│   ├─ logs/         # Detailed phase documentation
-│   └─ screens/      # GIS & analysis screenshots by phase
+├── maps/
+│   └── HarborFlow.atbx
 │
-├─ maps/             # GIS assets (excluding large ArcGIS project files)
-├─ notebooks/        # Jupyter notebooks (EDA, cleaning, ML)
-├─ tableau/          # Tableau dashboards
-└─ README.md
+├── data/
+│   └── raw/
+│       ├── ais/
+│       ├── weather/
+│       ├── maintenance/
+│       └── Natural_Earth_quick_start/
+│
+└── .gitignore
 
+## 🗺 GIS Project Files
 
-Large GIS project files (.aprx, .gdb) are intentionally excluded due to size and platform locking.
+**ArcGIS Pro project files (`.aprx`) are intentionally excluded** due to size and platform dependency.
 
-Project Status
+**Toolboxes (`.atbx`) are included** for reproducibility.
 
-| Phase   | Description                     | Status         |
-| ------- | ------------------------------- | -------------- |
-| Phase 0 | Project setup & GIS base layers | ✅ Completed    |
-| Phase 1 | Data import & EDA               | ⚠️ In progress |
-| Phase 2 | Cleaning & preprocessing        | ⏳ Planned      |
-| Phase 3 | SQL analysis & KPIs             | ⏳ Planned      |
-| Phase 4 | Visualizations & dashboards     | ⏳ Planned      |
-| Phase 5 | Risk analysis & alerts          | ⏳ Planned      |
-| Phase 6 | AI / ML modeling                | ⏳ Planned      |
-| Phase 7 | Portfolio integration           | ⏳ Planned      |
+**Full project files can be shared on request** via external storage.
 
-Detailed technical logs for each phase are available in docs/logs/.
+---
 
-Technologies Used
+## 🔭 Status
 
-GIS
+**Active — foundational GIS phase completed.**  
+Next steps include **structured visualization, harbor metrics, and AI-ready spatial datasets.**
 
-ArcGIS Pro
+---
 
-Shapefiles & Geodatabases
+## 📌 Notes
 
-Data & Analytics
-
-Python (Pandas, NumPy)
-
-SQL
-
-Jupyter Notebooks
-
-Visualization
-
-GIS maps
-
-Python plots
-
-Tableau dashboards
-
-Machine Learning
-
-Scikit-learn
-
-Random Forest
-
-XGBoost
-
-Notes
-
-Base GIS layers are sourced from Natural Earth (10m resolution)
-
-Real maintenance data is simulated using a proxy dataset
-
-The ArcGIS Pro project file (.aprx) can be shared via cloud storage upon request
-
-Future Extensions
-
-Live AIS data ingestion
-
-Automated ETL pipelines
-
-Cloud deployment (AWS / GCP / Azure)
-
-Real-time dashboards
-
-Advanced predictive modelling
-
-📁 For detailed workflows, logs, and screenshots, see the docs/ folder.
+**This project is part of an ongoing professional transition toward Maritime Data & AI Systems** and is designed to scale into **real-world operational use cases.**
 
