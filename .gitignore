@@ -25,14 +25,17 @@ raster_cache/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-# Ignore all data files
-data/**
 
-# But keep folder structure
+
+# Keep folder structure
 !data/.gitkeep
+
+# Allow raw folder itself
+!data/raw/
 
 # Allow Phase 0 shapefiles in Natural_Earth_quick_start/10m_physical
 !data/raw/Natural_Earth_quick_start/10m_physical/ne_10m_*.*
+
 
 # OS
 .DS_Store
