@@ -1,12 +1,13 @@
 # Phase 1 – Data Import & Exploratory Data Analysis (EDA)
 
 **Date:** 2026-01-23  
-**Status:** Python EDA completed | ArcGIS work in progress
+**Status:** Python EDA completed | ArcGIS visualizations in progress
 
 ## Overview
+
 Phase 1 focuses on importing AIS, weather, and maintenance datasets and performing exploratory data analysis to assess data quality, structure, and analytical potential.
 
-This phase validates the datasets before cleaning, preprocessing, and spatial integration.
+This phase ensures datasets are **ready for GIS import and spatial analysis**, before cleaning, preprocessing, and layer integration in ArcGIS.
 
 ---
 
@@ -97,8 +98,8 @@ A simulated maintenance dataset created to represent realistic vessel maintenanc
 ## GIS Status
 
 - Base GIS layers prepared during Phase 0
-- AIS, weather, and maintenance data validated for spatial integration
-- ArcGIS visual analysis and layer joins **in progress**
+- Python EDA confirmed that datasets have consistent coordinates and formats suitable for ArcGIS import
+- **ArcGIS visualizations, spatial joins, and advanced layer integrations are ongoing**
 
 ---
 
@@ -114,6 +115,6 @@ A simulated maintenance dataset created to represent realistic vessel maintenanc
 
 ## Notes
 
-- Phase 1 confirms dataset readiness for cleaning and preprocessing
-- No data transformations applied yet
-- Spatial joins and advanced GIS visualization will continue in the next phase
+- Phase 1 confirms dataset readiness for GIS import
+
+- No transformations applied yet; cleaning and preprocessing will occur in Phase 2
