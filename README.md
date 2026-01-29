@@ -1,223 +1,110 @@
-# HarborFlow – Maritime GIS & AI Analysis
+HarborFlow – Maritime GIS & AI Analysis
 
-HarborFlow is a **Maritime GIS & AI project** designed to analyze vessel movements, port activity, weather conditions, and maintenance patterns.
+HarborFlow is a Maritime GIS & AI project focused on analyzing vessel movements, port activity, weather conditions, and maintenance patterns.
 
-The project integrates **GIS mapping, Python analytics, SQL, and AI/ML** to deliver operational insights and portfolio-ready outputs for the maritime industry.
+The project integrates GIS mapping, Python analytics, SQL, and AI/ML to produce operational insights and portfolio-ready outputs for the maritime and logistics sectors.
 
----
+Project Goals
 
-## **Project Objectives**
+Analyze maritime traffic and port activity using AIS data
 
-- Analyze maritime traffic and port activity using **AIS data**  
-- Study **weather impacts** on vessel behavior  
-- Simulate **vessel maintenance data** for predictive analysis  
-- Visualize routes, density, and hotspots using **GIS**  
-- Clean, preprocess, and merge datasets using **Python & SQL**  
-- Build foundations for **predictive maintenance and route optimization**  
-- Document the full workflow for **GitHub & portfolio presentation**  
+Evaluate weather impacts on vessel behavior
 
----
+Simulate and study vessel maintenance patterns
 
-## **Repository Structure**
+Visualize spatial dynamics with GIS
+
+Build foundations for predictive maintenance and route optimization
+
+Document a complete, professional data workflow
+
+Repository Overview
 
 HarborFlow_Maritime_GIS_AI_Analysis/
 │
 ├─ data/
-│ ├─ raw/
-│ │ ├─ ais/
-│ │ │ └─ Livorno.csv
-│ │ ├─ weather/
-│ │ │ └─ weather_openmeteo_livorno_oct2023.csv
-│ │ └─ maintenance/
-│ │ └─ maintenance_proxy.csv
-│ ├─ cleaned/
-│ │ └─ .gitkeep
-│ └─ processed/
-│ └─ .gitkeep
+│   ├─ raw/          # Source datasets (AIS, weather, maintenance)
+│   ├─ cleaned/      # Cleaned datasets (generated)
+│   └─ processed/    # Feature-ready datasets (generated)
 │
 ├─ docs/
-│ └─ screens/
-│ ├─ phase0/
-│ ├─ phase1/
-│ ├─ phase2/
-│ ├─ phase3/
-│ ├─ phase4/
-│ ├─ phase5/
-│ ├─ phase6/
-│ └─ phase7/
+│   ├─ logs/         # Detailed phase documentation
+│   └─ screens/      # GIS & analysis screenshots by phase
 │
-├─ maps/ # ArcGIS Pro projects and geodatabases
-├─ notebooks/ # Jupyter notebooks (EDA, cleaning, ML)
-├─ tableau/ # Tableau dashboards
+├─ maps/             # GIS assets (excluding large ArcGIS project files)
+├─ notebooks/        # Jupyter notebooks (EDA, cleaning, ML)
+├─ tableau/          # Tableau dashboards
 └─ README.md
----
 
-## **Tools & Technologies**
 
-**GIS**  
-- ArcGIS Pro  
-- Shapefiles & Geodatabases (.gdb)  
+Large GIS project files (.aprx, .gdb) are intentionally excluded due to size and platform locking.
 
-**Analytics & Data**  
-- Python (Pandas, NumPy)  
-- SQL (SQLite / PostgreSQL)  
-- Jupyter Notebooks  
+Project Status
 
-**Visualization**  
-- Matplotlib  
-- Seaborn  
-- Plotly  
-- Tableau  
+| Phase   | Description                     | Status         |
+| ------- | ------------------------------- | -------------- |
+| Phase 0 | Project setup & GIS base layers | ✅ Completed    |
+| Phase 1 | Data import & EDA               | ⚠️ In progress |
+| Phase 2 | Cleaning & preprocessing        | ⏳ Planned      |
+| Phase 3 | SQL analysis & KPIs             | ⏳ Planned      |
+| Phase 4 | Visualizations & dashboards     | ⏳ Planned      |
+| Phase 5 | Risk analysis & alerts          | ⏳ Planned      |
+| Phase 6 | AI / ML modeling                | ⏳ Planned      |
+| Phase 7 | Portfolio integration           | ⏳ Planned      |
 
-**Machine Learning**  
-- Scikit-learn  
-- Random Forest  
-- XGBoost  
+Detailed technical logs for each phase are available in docs/logs/.
 
-**Documentation**  
-- GitHub  
-- Markdown  
-- Screenshots & logs  
+Technologies Used
 
----
+GIS
 
-## **Phase Workflow Overview**
+ArcGIS Pro
 
-### **PHASE 0 – Initial Setup**
+Shapefiles & Geodatabases
 
-**Date:** 2026-01-17  
+Data & Analytics
 
-**Phase 0 Base Layers**  
-The following shapefiles have been loaded for Phase 0 (ArcGIS Pro):  
+Python (Pandas, NumPy)
 
-- `data/raw/Natural_Earth_quick_start/10m_physical/ne_10m_ports.shp`  
-- `data/raw/Natural_Earth_quick_start/10m_physical/ne_10m_coastline.shp`  
-- `data/raw/Natural_Earth_quick_start/10m_physical/ne_10m_land_scale_rank.shp`  
+SQL
 
-**Tasks Completed:**  
-- Folder structure verified  
-- ArcGIS Pro project and geodatabase created  
-- **Base layers loaded** (`Ports`, `Coastline`, `Land`)  
-- Initial attribute tables reviewed   
+Jupyter Notebooks
 
-**Outputs:**  
-- Screenshots saved in `docs/screens/phase0/` 
+Visualization
 
-**Note:** The ArcGIS project file (`.aprx`) used for this project is **not included in the repository** due to its large size. If you need it, it can be provided via cloud storage (OneDrive, Google Drive, etc.) upon request. 
+GIS maps
 
----
+Python plots
 
-### **PHASE 1 – Data Import & Exploratory Analysis**
+Tableau dashboards
 
-**Date:** 2026-01-23  
-**Status:** ✅ In progress  
+Machine Learning
 
-#### **AIS Data**
-- Imported AIS vessel traffic data for **Port of Livorno**  
-- **File:** `data/raw/ais/Livorno.csv`  
-- Records: ~19,700  
-- No missing values or duplicates detected  
+Scikit-learn
 
-**EDA Outputs:**  
-- Vessel count over time  
-- Speed distribution  
-- Vessel type frequency  
-- Spatial position plots  
+Random Forest
 
-**Screenshots:**  
-- `ais_ship_count_time.png`  
-- `ais_speed_distribution.png`  
-- `ais_vessel_type_frequency.png`  
-- `ais_positions.png`  
-- `ais_summary_statistics_before_cleaning.csv`  
+XGBoost
 
----
+Notes
 
-#### **Weather Data**
-- Downloaded historical weather data (Oct 2023) using **Open-Meteo API**  
-- Location: **Livorno**  
-- **File:** `data/raw/weather/weather_openmeteo_livorno_oct2023.csv`  
+Base GIS layers are sourced from Natural Earth (10m resolution)
 
-**Weather EDA Completed:**  
-- Verified structure and datatypes  
-- No missing values detected  
-- Stable latitude/longitude (fixed location)  
-- Key variables analyzed:  
-  - Temperature  
-  - Wind speed & direction  
-  - Surface pressure  
-  - Precipitation  
-  - Weather codes  
+Real maintenance data is simulated using a proxy dataset
 
-**Screenshots:**  
-- `01_weather_download_livorno.png`  
-- `02_weather_download_livorno.png`  
+The ArcGIS Pro project file (.aprx) can be shared via cloud storage upon request
 
----
+Future Extensions
 
-#### **Maintenance Data (Proxy Dataset)**
-- Simulated realistic maintenance scenarios  
-- **File:** `data/raw/maintenance/maintenance_proxy.csv`  
-- Columns:  
-  - vessel_id  
-  - vessel_type  
-  - last_maintenance  
-  - maintenance_type  
-  - hours_since_last  
-  - next_due_hours  
-  - port  
+Live AIS data ingestion
 
-**Maintenance EDA Results:**  
-- No missing values  
-- Vessel types: Cargo, Tanker, Passenger  
-- Maintenance types: Engine, Hull, Navigation  
-- Hours since last maintenance: **50–300**  
-- Next maintenance due: **400–600 hours**  
+Automated ETL pipelines
 
-✅ Phase 1 Maintenance EDA completed successfully  
-⚠️ Phase 1 ArcGIS work is still in progress 
+Cloud deployment (AWS / GCP / Azure)
 
----
+Real-time dashboards
 
-## **Next Steps**
+Advanced predictive modelling
 
-### **PHASE 2 – Cleaning & Preprocessing**
-- Remove outliers  
-- Standardize formats  
-- Merge AIS, weather, and maintenance datasets  
-- Save cleaned data in `data/processed/`  
-
-### **PHASE 3 – SQL Analysis & KPIs**
-- Build SQL database  
-- Aggregate KPIs (traffic, speed, weather impact)  
-- Prepare data for Tableau & ArcGIS  
-
-### **PHASE 4 – Visualizations & Dashboards**
-- GIS heatmaps  
-- Tableau dashboards  
-- Python visualizations  
-
-### **PHASE 5 – Cybersecurity & Risk Alerts**
-- Anomaly detection  
-- Risk simulations  
-- GIS-based alert mapping  
-
-### **PHASE 6 – AI / ML Modeling**
-- Feature engineering  
-- Predictive maintenance models  
-- Route optimization  
-
-### **PHASE 7 – Portfolio Integration**
-- Repository polishing  
-- Final documentation  
-- Portfolio website integration  
-
----
-
-## **Future Improvements**
-- Live AIS streaming  
-- Automated ETL pipelines  
-- Cloud deployment (AWS / GCP / Azure)  
-- Real-time dashboards  
-- Advanced predictive models
+📁 For detailed workflows, logs, and screenshots, see the docs/ folder.
 
