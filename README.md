@@ -101,7 +101,9 @@ The following shapefiles have been loaded for Phase 0 (ArcGIS Pro):
 - Initial attribute tables reviewed   
 
 **Outputs:**  
-- Screenshots saved in `docs/screens/phase0/`  
+- Screenshots saved in `docs/screens/phase0/` 
+
+**Note:** The ArcGIS project file (`.aprx`) used for this project is **not included in the repository** due to its large size. If you need it, it can be provided via cloud storage (OneDrive, Google Drive, etc.) upon request. 
 
 ---
 
