@@ -1,74 +1,100 @@
-# HarborFlow — Maritime GIS & AI Analysis
+HarborFlow – Maritime GIS & AI Analysis
 
-**HarborFlow** is a modular, research-driven project exploring how **GIS, maritime data, and AI** can be combined to analyze harbor environments, vessel movement, and operational patterns.
+HarborFlow is a Maritime GIS & AI project focused on analyzing vessel traffic, port activity, weather conditions, and maintenance patterns.
 
-The repository is structured to support **incremental development**, starting from geospatial foundations and evolving toward predictive and AI-assisted maritime insights.
+It combines GIS mapping, Python analytics, SQL, and AI/ML to deliver operational insights and portfolio-ready outputs for the maritime sector.
 
----
+🔍 What This Project Does
 
-## 🚢 Project Scope
+🚢 Analyze maritime traffic using AIS data
 
-- Maritime geospatial analysis using **ArcGIS Pro**
-- Integration of **AIS, environmental, and infrastructure data**
-- Progressive pipeline toward **AI-assisted harbor intelligence**
-- Clear separation between **analysis, documentation, and visualization**
+🌦️ Study weather impact on vessel behavior
 
----
+🛠️ Simulate maintenance patterns for predictive analysis
 
-## 🧭 Development Phases (High-Level)
+🗺️ Visualize spatial data using GIS
 
-| Phase | Focus |
-|------|------|
-| **Phase 0** | GIS foundations, basemaps, and spatial data validation |
-| **Phase 1** | Harbor-level spatial analysis & data structuring |
-| **Phase 2** | AI-ready datasets & feature engineering *(planned)* |
-| **Phase 3** | Predictive modeling & decision support *(planned)* |
+🤖 Prepare data pipelines for AI & ML models
 
-📄 **Detailed technical documentation is available in `/docs`.**
+📘 Document a complete, professional workflow
 
----
+📁 Repository at a Glance
 
-## 🗂 Repository Structure
-
-```text
 HarborFlow_Maritime_GIS_AI_Analysis/
 │
-├── README.md
-├── docs/
-│   ├── phase0L.md
-│   ├── phase1L.md
-│   └── screens/
-│
-├── maps/
-│   └── HarborFlow.atbx
-│
-├── data/
-│   └── raw/
-│       ├── ais/
-│       ├── weather/
-│       ├── maintenance/
-│       └── Natural_Earth_quick_start/
-│
-└── .gitignore
+├─ data/          → Raw, cleaned, and processed datasets
+├─ docs/          → Technical logs & screenshots
+├─ maps/          → GIS assets (lightweight only)
+├─ notebooks/     → Jupyter analysis notebooks
+├─ tableau/       → Dashboard outputs
+└─ README.md
 
-## 🗺 GIS Project Files
+Large GIS project files (.aprx, .gdb) are intentionally excluded to keep the repository lightweight and portable.
 
-**ArcGIS Pro project files (`.aprx`) are intentionally excluded** due to size and platform dependency.
+📊 Project Status
 
-**Toolboxes (`.atbx`) are included** for reproducibility.
+| Phase   | Description                   | Status         |
+| ------- | ----------------------------- | -------------- |
+| Phase 0 | GIS setup & base layers       | ✅ Completed    |
+| Phase 1 | Data import & EDA             | ⚠️ In progress |
+| Phase 2 | Data cleaning & preprocessing | ⏳ Planned      |
+| Phase 3 | SQL analysis & KPIs           | ⏳ Planned      |
+| Phase 4 | Visualizations & dashboards   | ⏳ Planned      |
+| Phase 5 | Risk analysis & alerts        | ⏳ Planned      |
+| Phase 6 | AI / ML modeling              | ⏳ Planned      |
+| Phase 7 | Portfolio integration         | ⏳ Planned      |
 
-**Full project files can be shared on request** via external storage.
+🗺️ GIS Base Layers (Phase 0)
 
----
+Loaded in ArcGIS Pro using Natural Earth (10m resolution):
 
-## 🔭 Status
+Ports (ne_10m_ports.shp)
 
-**Active — foundational GIS phase completed.**  
-Next steps include **structured visualization, harbor metrics, and AI-ready spatial datasets.**
+Coastline (ne_10m_coastline.shp)
 
----
+Land (ne_10m_land_scale_rank.shp)
 
-## 📌 Notes
+📌 The ArcGIS project file (.aprx) is not stored in the repo due to size and system dependency.
+It can be shared via cloud storage on request.
 
-**This project is part of an ongoing professional transition toward Maritime Data & AI Systems** and is designed to scale into **real-world operational use cases.**
+🧪 Data Sources
+
+| Dataset         | Description                           |
+| --------------- | ------------------------------------- |
+| **AIS**         | Vessel traffic data (Port of Livorno) |
+| **Weather**     | Historical weather (Open-Meteo API)   |
+| **Maintenance** | Simulated proxy dataset               |
+
+🛠️ Technologies Used
+
+GIS: ArcGIS Pro, Shapefiles
+Data: Python, Pandas, NumPy, SQL
+Visualization: GIS maps, Python plots, Tableau
+ML: Scikit-learn, Random Forest, XGBoost
+
+📂 Detailed Documentation
+
+🔹 Phase logs: docs/logs/
+
+🔹 Screenshots: docs/screens/
+
+🔹 Notebooks: notebooks/
+
+Full technical details are documented separately to keep the repository clean and readable.
+
+🚀 Next Steps
+
+Merge AIS, weather, and maintenance datasets
+
+Build SQL KPIs
+
+Develop predictive maintenance models
+
+Publish GIS & Tableau dashboards
+
+Integrate into professional portfolio
+
+
+
+
 
