@@ -1,4 +1,4 @@
-# **HarborFlow – Maritime GIS & AI Analysis**
+# HarborFlow – Maritime GIS & AI Analysis
 
 **HarborFlow** is a **Maritime GIS & AI project** focused on analyzing vessel traffic, port activity, weather conditions, and maintenance patterns.
 
@@ -6,7 +6,7 @@ It combines **GIS mapping, Python analytics, SQL, and AI/ML** to deliver operati
 
 ---
 
-## 🔍 **What This Project Does**
+## 🔍 What This Project Does
 
 - 🚢 **Analyze maritime traffic using AIS data**  
 - 🌦️ **Study weather impact on vessel behavior**  
@@ -17,16 +17,15 @@ It combines **GIS mapping, Python analytics, SQL, and AI/ML** to deliver operati
 
 ---
 
-## 📁 **Repository at a Glance**
-
+## 📁 Repository at a Glance
 
 HarborFlow_Maritime_GIS_AI_Analysis/
 │
-├─ data/          → Raw, cleaned, and processed datasets
-├─ docs/          → Technical logs & screenshots
-├─ maps/          → GIS assets (lightweight only)
-├─ notebooks/     → Jupyter analysis notebooks
-├─ tableau/       → Dashboard outputs
+├─ data/ → Raw, cleaned, and processed datasets
+├─ docs/ → Technical logs & screenshots
+├─ maps/ → GIS assets (lightweight only)
+├─ notebooks/ → Jupyter analysis notebooks
+├─ tableau/ → Dashboard outputs
 └─ README.md
 
 
@@ -34,12 +33,12 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 
 ---
 
-## 📊 **Project Status**
+## 📊 Project Status (Updated)
 
 | Phase   | Description                   | Status         |
 | ------- | ----------------------------- | -------------- |
 | Phase 0 | GIS setup & base layers       | ✅ Completed    |
-| Phase 1 | Data import & EDA             | ⚠️ In progress |
+| Phase 1 | Data import & EDA             | ✅ Completed    |
 | Phase 2 | Data cleaning & preprocessing | ⏳ Planned      |
 | Phase 3 | SQL analysis & KPIs           | ⏳ Planned      |
 | Phase 4 | Visualizations & dashboards   | ⏳ Planned      |
@@ -49,20 +48,7 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 
 ---
 
-## 🗺️ **GIS Base Layers (Phase 0)**
-
-Loaded in ArcGIS Pro using Natural Earth (10m resolution):
-
-- **Ports:** `ne_10m_ports.shp`  
-- **Coastline:** `ne_10m_coastline.shp`  
-- **Land:** `ne_10m_land_scale_rank.shp`  
-
-> **Note:** The ArcGIS project file (.aprx) is **not stored** in the repo due to size and system dependency.  
-> It can be shared via cloud storage on request.
-
----
-
-## 🧪 **Data Sources**
+## 🧪 Data Sources
 
 | Dataset         | Description                           |
 | --------------- | ------------------------------------- |
@@ -72,7 +58,7 @@ Loaded in ArcGIS Pro using Natural Earth (10m resolution):
 
 ---
 
-## 🛠️ **Technologies Used**
+## 🛠️ Technologies Used
 
 - **GIS:** ArcGIS Pro, Shapefiles  
 - **Data:** Python, Pandas, NumPy, SQL  
@@ -81,24 +67,21 @@ Loaded in ArcGIS Pro using Natural Earth (10m resolution):
 
 ---
 
-## 📂 **Detailed Documentation**
+## 📂 Documentation
 
 - 🔹 **Phase logs:** `docs/logs/`  
 - 🔹 **Screenshots:** `docs/screens/`  
 - 🔹 **Notebooks:** `notebooks/`  
 
-> Full technical details are documented separately to keep the repository clean and readable.
+> Detailed technical logs and screenshots are kept separate to keep the repository clean and portfolio-ready.
 
 ---
 
-## 🚀 **Next Steps**
+## 🚀 Next Steps (Phase 2)
 
 - Merge AIS, weather, and maintenance datasets  
-- Build SQL KPIs  
-- Develop predictive maintenance models  
-- Publish GIS & Tableau dashboards  
-- Integrate into professional portfolio
-
-
-
+- Clean and preprocess data for analysis  
+- Filter outliers, handle missing/invalid values  
+- Prepare ML-ready datasets for predictive modeling  
+- Capture outputs for notebooks and GIS layers
 
