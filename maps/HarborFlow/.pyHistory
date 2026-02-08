@@ -1,0 +1,14 @@
+﻿import arcpy
+gdb = r"C:\Users\miche\Documents\HarborFlow_Fresh\maps\HarborFlow\HarborFlow.gdb"
+arcpy.env.workspace = gdb
+import arcpy
+fcs = arcpy.ListFeatureClasses() print(fcs)
+tables = arcpy.ListTables() print(tables)
+print(tables)
+tables = arcpy.ListTables()
+print(tables)
+import arcpy  # Workspace gdb = r"C:\Users\miche\Documents\HarborFlow_Fresh\maps\HarborFlow\HarborFlow.gdb" arcpy.env.workspace = gdb  # Input feature class input_fc = "AIS_points_with_Port_final"  # Output table name output_table = "AIS_VesselCount_PerPort"  # Delete old table if exists if arcpy.Exists(output_table):     arcpy.management.Delete(output_table)  # Count vessels per port counts = {} with arcpy.da.SearchCursor(input_fc, ["PortName"]) as cursor:     for row in cursor:         port = row[0]         if port:             counts[port] = counts.get(port, 0) + 1  # Create new table arcpy.management.CreateTable(gdb, output_table)  # Add fields arcpy.management.AddField(output_table, "PortName", "TEXT", field_length=50) arcpy.management.AddField(output_table, "FREQUENCY", "LONG")  # Insert counts with arcpy.da.InsertCursor(output_table, ["PortName", "FREQUENCY"]) as icursor:     for port, freq in counts.items():         icursor.insertRow([port, freq])  print("AIS_VesselCount_PerPort created successfully!")
+import arcpy  # Workspace gdb = r"C:\Users\miche\Documents\HarborFlow_Fresh\maps\HarborFlow\HarborFlow.gdb" arcpy.env.workspace = gdb  # Target feature class (Natural Earth ports) target_fc = "ne_10m_ports"  # Join table (vessel counts) join_table = "AIS_VesselCount_PerPort"  # Fields to join join_table_field = "PortName"   # from AIS_VesselCount_PerPort target_join_field = "name"      # from ne_10m_ports
+arcpy.management.JoinField(     in_data=target_fc,     in_field=target_join_field,     join_table=join_table,     join_field=join_table_field,     fields=["FREQUENCY"]  # only bring over the FREQUENCY column )  print("Vessel counts successfully joined to ne_10m_ports!")
+# Quick check of first 10 rows with arcpy.da.SearchCursor(target_fc, ["name", "FREQUENCY"]) as cursor:     for i, row in enumerate(cursor):         print(row)         if i >= 9:  # only first 10 rows             break
+import arcpy  fc = "ne_10m_ports" arcpy.management.MakeFeatureLayer(fc, "ports_with_vessels", "FREQUENCY > 0")
