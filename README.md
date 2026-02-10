@@ -24,7 +24,7 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 ├─ data/ → Raw, cleaned, and processed datasets
 ├─ docs/ → Technical logs & screenshots
 ├─ maps/ → GIS assets (lightweight only)
-├─ notebooks/ → Jupyter analysis notebooks
+├─ notebooks/ → Python/Jupyter analysis notebooks
 ├─ tableau/ → Dashboard outputs
 └─ README.md
 
@@ -39,7 +39,7 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 | ------- | ----------------------------- | -------------- |
 | Phase 0 | GIS setup & base layers       | ✅ Completed    |
 | Phase 1 | Data import & EDA             | ✅ Completed    |
-| Phase 2 | Data cleaning & preprocessing | ⏳ Planned      |
+| Phase 2 | Data cleaning & preprocessing | ✅ Completed      |
 | Phase 3 | SQL analysis & KPIs           | ⏳ Planned      |
 | Phase 4 | Visualizations & dashboards   | ⏳ Planned      |
 | Phase 5 | Risk analysis & alerts        | ⏳ Planned      |
@@ -55,12 +55,12 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 | **AIS**         | Vessel traffic data (Port of Livorno) |
 | **Weather**     | Historical weather (Open-Meteo API)   |
 | **Maintenance** | Simulated proxy dataset               |
-
+| **Ports**	  | Natural Earth ports shapefile
 ---
 
 ## 🛠️ Technologies Used
 
-- **GIS:** ArcGIS Pro, Shapefiles  
+- **GIS:** ArcGIS Pro, Shapefiles, GeoPandas, Pyogrio  
 - **Data:** Python, Pandas, NumPy, SQL  
 - **Visualization:** GIS maps, Python plots, Tableau  
 - **ML:** Scikit-learn, Random Forest, XGBoost  
@@ -77,11 +77,13 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 
 ---
 
-## 🚀 Next Steps (Phase 2)
+## 🚀 Next Steps (Phase 3)
 
-- Merge AIS, weather, and maintenance datasets  
-- Clean and preprocess data for analysis  
-- Filter outliers, handle missing/invalid values  
-- Prepare ML-ready datasets for predictive modeling  
-- Capture outputs for notebooks and GIS layers
+- Merge cleaned AIS, weather, and maintenance datasets
+
+- Load datasets into SQL database for KPI generation
+
+- Prepare data for predictive modeling of vessel traffic and maintenance
+
+- Perform analysis and aggregation for machine learning input
 
