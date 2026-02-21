@@ -1,0 +1,6 @@
+vessel_id,vessel_type,date,maintenance_type,hours_since_last,next_due_hours,port
+V001,Cargo,2023-09-15,Engine,120,500,Livorno
+V002,Tanker,2023-09-10,Hull,300,600,Genoa
+V003,Passenger,2023-09-12,Navigation,80,400,Livorno
+V004,Cargo,2023-09-20,Engine,50,500,Marseille
+V005,Tanker,2023-09-18,Hull,200,600,Genoa

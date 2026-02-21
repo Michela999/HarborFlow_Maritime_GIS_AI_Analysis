@@ -1,8 +1,8 @@
 # HarborFlow – Maritime GIS & AI Analysis
 
-**HarborFlow** is a **Maritime GIS & AI project** focused on analyzing vessel traffic, port activity, weather conditions, and maintenance patterns.
+**HarborFlow** is a **Maritime GIS, AI & Cybersecurity project** focused on analyzing vessel traffic, port activity, weather conditions, maintenance patterns, and monitoring cybersecurity anomalies.
 
-It combines **GIS mapping, Python analytics, SQL, and AI/ML** to deliver operational insights and portfolio-ready outputs for the maritime sector.
+It combines **GIS mapping, Python analytics, SQL, and AI/ML, and cybersecurity monitoring** to deliver operational insights and portfolio-ready outputs for the maritime sector.
 
 ---
 
@@ -13,6 +13,7 @@ It combines **GIS mapping, Python analytics, SQL, and AI/ML** to deliver operati
 - 🛠️ **Simulate maintenance patterns for predictive analysis**  
 - 🗺️ **Visualize spatial data using GIS**  
 - 🤖 **Prepare data pipelines for AI & ML models**  
+- 🔒 **Monitor cybersecurity threats and anomalies**
 - 📘 **Document a complete, professional workflow**
 
 ---
@@ -26,8 +27,8 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 ├─ maps/ → GIS assets (lightweight only)
 ├─ notebooks/ → Python/Jupyter analysis notebooks
 ├─ tableau/ → Dashboard outputs
+├─ sql/ → Database schema design & SQL queries
 └─ README.md
-
 
 > **Note:** Large GIS project files (.aprx, .gdb) are intentionally excluded to keep the repository lightweight and portable.
 
@@ -39,8 +40,8 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 | ------- | ----------------------------- | -------------- |
 | Phase 0 | GIS setup & base layers       | ✅ Completed    |
 | Phase 1 | Data import & EDA             | ✅ Completed    |
-| Phase 2 | Data cleaning & preprocessing | ✅ Completed      |
-| Phase 3 | SQL analysis & KPIs           | ⏳ Planned      |
+| Phase 2 | Data cleaning & preprocessing | ✅ Completed    |
+| Phase 3 | SQL analysis & KPIs           | ✅ Completed    |
 | Phase 4 | Visualizations & dashboards   | ⏳ Planned      |
 | Phase 5 | Risk analysis & alerts        | ⏳ Planned      |
 | Phase 6 | AI / ML modeling              | ⏳ Planned      |
@@ -61,8 +62,9 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 ## 🛠️ Technologies Used
 
 - **GIS:** ArcGIS Pro, Shapefiles, GeoPandas, Pyogrio  
-- **Data:** Python, Pandas, NumPy, SQL  
-- **Visualization:** GIS maps, Python plots, Tableau  
+- **Data:** Python, Pandas, NumPy, SQL, PostgreSQL 
+- **Database Tools:** pgAdmin4
+- **Visualization:** GIS maps, Python plots, Tableau, Google Sheets (charts)  
 - **ML:** Scikit-learn, Random Forest, XGBoost  
 
 ---
@@ -77,13 +79,40 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 
 ---
 
-## 🚀 Next Steps (Phase 3)
+## 🚀 Next Steps (Phase 4)
 
-- Merge cleaned AIS, weather, and maintenance datasets
+- **Data Integration:** Consolidate SQL tables, GIS layers, and analytical outputs into a unified ML-ready dataset
 
-- Load datasets into SQL database for KPI generation
+- **Feature Engineering:** Extract traffic density metrics, port activity indicators, and temporal patterns
 
-- Prepare data for predictive modeling of vessel traffic and maintenance
+- **Predictive Modeling:** Build and test models for vessel traffic forecasting and congestion prediction
 
-- Perform analysis and aggregation for machine learning input
+- **Data Preparation:** Aggregate, normalize, and structure inputs for ML pipelines
 
+- **Model Evaluation:** Compare performance, validate accuracy, and optimize parameters
+
+- **Deployment Layer:** Embed predictive outputs into GIS maps and decision-support dashboards
+
+## 🎯 Long-Term Vision
+
+HarborFlow aims to evolve into a modular maritime intelligence framework combining:
+
+- GIS systems
+
+- Structured databases
+
+- AI predictive models
+
+- Decision-support dashboards
+
+- Cybersecurity monitoring and anomaly detection
+
+Designed for applications in:
+
+- Port authorities
+
+- Maritime logistics companies
+
+- Smart port initiatives
+
+- Maritime risk assessment systems

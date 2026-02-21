@@ -1,0 +1,6 @@
+vessel_id,vessel_type,first_maintenance,last_maintenance,maintenance_gap_days
+V004,Cargo,2023-09-20,2023-09-20,0
+V003,Passenger,2023-09-12,2023-09-12,0
+V005,Tanker,2023-09-18,2023-09-18,0
+V001,Cargo,2023-09-15,2023-09-15,0
+V002,Tanker,2023-09-10,2023-09-10,0
