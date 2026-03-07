@@ -57,3 +57,7 @@ data/.ipynb_checkpoints/
 
 *.sr.lock
 desktop.ini
+
+# Local / editor / database files
+*.pyHistory
+*.sde
