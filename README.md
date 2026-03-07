@@ -42,10 +42,9 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 | Phase 1 | Data import & EDA             | ✅ Completed    |
 | Phase 2 | Data cleaning & preprocessing | ✅ Completed    |
 | Phase 3 | SQL analysis & KPIs           | ✅ Completed    |
-| Phase 4 | Visualizations & dashboards   | ⏳ Planned      |
-| Phase 5 | Risk analysis & alerts        | ⏳ Planned      |
-| Phase 6 | AI / ML modeling              | ⏳ Planned      |
-| Phase 7 | Portfolio integration         | ⏳ Planned      |
+| Phase 4 | Risk analytics & Dashboard    | ✅ Completed    |
+| Phase 5 | Cybersecurity Risk & alerts   | ⏳ Planned      |
+
 
 ---
 
@@ -62,10 +61,11 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 ## 🛠️ Technologies Used
 
 - **GIS:** ArcGIS Pro, Shapefiles, GeoPandas, Pyogrio  
-- **Data:** Python, Pandas, NumPy, SQL, PostgreSQL 
+- **Data:** Python, Pandas, NumPy
+- **Database** SQL, PostgreSQL 
 - **Database Tools:** pgAdmin4
-- **Visualization:** GIS maps, Python plots, Tableau, Google Sheets (charts)  
-- **ML:** Scikit-learn, Random Forest, XGBoost  
+- **Visualization:** GIS maps, Python plots, Tableau Public, Google Sheets (charts)  
+- **Machine Learning:** Scikit-learn, Random Forest, XGBoost  
 
 ---
 
@@ -79,19 +79,12 @@ HarborFlow_Maritime_GIS_AI_Analysis/
 
 ---
 
-## 🚀 Next Steps (Phase 4)
+## 🚀 Next Steps (Phase 5)
 
-- **Data Integration:** Consolidate SQL tables, GIS layers, and analytical outputs into a unified ML-ready dataset
+Phase 5 will focus on *Risk Analysis & Cybersecurity Alerts* for maritime operations.
 
-- **Feature Engineering:** Extract traffic density metrics, port activity indicators, and temporal patterns
+This phase will explore anomalous vessel behavior detection, identifying unusual AIS patterns such as abnormal speed, route deviations, or unexpected traffic density. It will also introduce risk alert indicators and anomaly detection techniques to support early warning systems and improve maritime operational awareness.
 
-- **Predictive Modeling:** Build and test models for vessel traffic forecasting and congestion prediction
-
-- **Data Preparation:** Aggregate, normalize, and structure inputs for ML pipelines
-
-- **Model Evaluation:** Compare performance, validate accuracy, and optimize parameters
-
-- **Deployment Layer:** Embed predictive outputs into GIS maps and decision-support dashboards
 
 ## 🎯 Long-Term Vision
 
