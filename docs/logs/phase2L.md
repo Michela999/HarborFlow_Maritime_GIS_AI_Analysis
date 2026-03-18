@@ -8,7 +8,7 @@
 
 ## Overview
 
-Phase 2 focused on **cleaning and preprocessing AIS, weather, and maintenance datasets** to prepare them for GIS mapping, predictive analytics, and Phase 3 SQL/ML integration.
+Phase 2 focused on **cleaning and preprocessing AIS, weather, and maintenance datasets** to prepare them for GIS mapping, predictive analytics, and Phase 3 SQL/KPI Visualitation.
 
 The main objectives achieved:
 
@@ -25,9 +25,8 @@ The main objectives achieved:
 
 Located in:
 
-```
-notebooks/phase2_data_cleaning.py
-```
+* `02_data_cleaning.py.py` *(previously `phase2_data_cleaning.py`)*
+
 
 This script includes:
 
@@ -162,7 +161,7 @@ data/processed/AIS_VesselCount_PerPort.csv
 * AIS GeoDataFrame created and exported as shapefile
 * Traffic summary per port calculated and exported
 * Intermediate cleaned datasets stored in `cleaned` folder for reproducibility
-* Ready for Phase 3 SQL/ML integration
+* Ready for Phase 3 SQL/KPI Visualitation
 
 ---
 

@@ -41,6 +41,10 @@ Staging tables were used for **fast KPI calculations and Google Sheets visualiza
     - Weather Impact on Vessel Speed  
     - Maintenance Gaps by Vessel  
 
+- **Project Notebook / Script**
+
+  * `03_sql_kpi_analysis.ipynb` *(previously `phase3_SQL_and_KPIs.ipynb`)*
+
 - **Documentation & Reproducibility**  
   - Added SQL scripts in `sql/` folder:
     - `phase3_drop_tables.sql`  
@@ -87,7 +91,7 @@ docs/screens/phase3/maintenance_google_chart.png
 - Normalized schema prepared for Phase 4 feature engineering  
 - Folder structure updated with `sql/`, `data/processed/`, `docs/screens/phase3/`  
 
-**Ready for:** *Phase 4 – Feature Engineering & Predictive Modeling*
+**Ready for:** *Phase 4 – Operational Risk Dashboard & GIS/AI Integration*
 
 
 

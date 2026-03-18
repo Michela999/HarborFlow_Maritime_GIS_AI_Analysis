@@ -81,7 +81,8 @@ docs/screens/phase4/ AIS_HighLowTraffic_Map
 
 * **Documentation & Reproducibility**
 
-  * All Python scripts documented in Jupyter Notebook (`Phase4_Operational_Risk.ipynb`)
+  * All Python scripts documented in Jupyter Notebook 
+ * `04_operational_risk_modeling.ipynb` *(previously `Phase4_Operational_Risk.ipynb`)*
   * Notebook contains: data loading, normalization, risk calculation, KPI computation, Tableau export preparation
   * Outputs verified and ready for Phase 5
 
