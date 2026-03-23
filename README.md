@@ -98,6 +98,7 @@ The following visuals highlight key analytical outputs and decision-support insi
 <img src="docs/screens/phase5/top10_critical_vessels.png" width="600">
 
 *Identification and ranking of the most critical vessels based on aggregated risk indicators.*
+
 ---
 
 # 📊 Why It Matters
