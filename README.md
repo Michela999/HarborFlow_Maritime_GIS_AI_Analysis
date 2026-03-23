@@ -1,159 +1,208 @@
-# HarborFlow – Maritime GIS & AI Analysis
+# 🚀 HarborFlow – Maritime Data Intelligence (GIS + AI)
 
-**HarborFlow** is an end-to-end **Maritime Data Intelligence project** integrating **GIS, data analytics, and machine learning** to analyze vessel activity, port operations, and environmental conditions.  
+**HarborFlow** is an end-to-end data analytics project that simulates a real-world maritime decision-support system using **GIS, data analytics, and machine learning**.
 
-The project transforms raw maritime data into **actionable insights** through spatial analysis, risk modeling, and anomaly detection — simulating real-world decision-support systems used in modern maritime operations.
-
----
-
-## 🚀 Project Overview
-
-HarborFlow demonstrates how data-driven approaches can improve:
-
-- Maritime situational awareness  
-- Operational efficiency  
-- Risk monitoring and early warning systems  
-
-It combines:
-
-- 🗺️ **Geospatial analysis (GIS)**  
-- 🐍 **Python data analytics**  
-- 🗄️ **SQL data modeling**  
-- 🤖 **Machine learning (anomaly detection)**  
-- 📊 **Data visualization & dashboards**  
+It transforms raw maritime data (AIS, weather, maintenance) into **actionable insights for operational efficiency, risk monitoring, and anomaly detection**.
 
 ---
 
-## 🔍 Key Capabilities
+# 🎯 Business Problem
 
-- 🚢 **AIS Traffic Analysis** – Analyze vessel movements, density, and port activity patterns  
-- 🌦️ **Weather Impact Analysis** – Evaluate how environmental conditions influence vessel operations  
-- 🛠️ **Maintenance Risk Modeling** – Simulate maintenance patterns for predictive insights  
-- 🗺️ **Spatial Intelligence (GIS)** – Map vessel routes, port infrastructure, and geographic risk factors  
-- 🤖 **AI-Based Anomaly Detection** – Detect abnormal vessel behavior using Isolation Forest  
-- ⚠️ **Risk Scoring System** – Combine operational, maintenance, and weather risks into unified indicators  
-- 📊 **Fleet Risk Intelligence Dataset** – Produce a structured dataset for monitoring and prioritization  
+Maritime operations generate large volumes of complex data, but:
+
+- vessel behavior is difficult to monitor in real time  
+- environmental factors impact operations unpredictably  
+- risk detection is often reactive rather than proactive  
+
+👉 Companies need **data-driven systems** to improve:
+- route efficiency  
+- safety and risk monitoring  
+- operational decision-making  
 
 ---
 
-# 🧠 Project Architecture
+# 💡 Solution
+
+HarborFlow builds a **data pipeline + analytics system** that:
+
+- integrates AIS, weather, and maintenance data  
+- applies geospatial analysis (GIS)  
+- models operational and environmental risk  
+- detects anomalies using machine learning  
+
+👉 Result: a **fleet-level risk intelligence system**
+
+---
+
+# 🔍 Key Insights (Example Outputs)
+
+- Identification of **high-traffic vessel routes**  
+- Detection of **anomalous vessel behavior**  
+- Impact of **weather conditions on operations**  
+- Prioritization of vessels based on **combined risk score**  
+
+The following visuals highlight key analytical outputs and decision-support insights generated throughout the project:
+
+## 📸 Visual Insights
+
+### 🗺️ Maritime Traffic & Spatial Patterns
+
+<img src="docs/screens/phase4/AIS_HighLowTraffic_Map.png" width="700">
+
+*Geospatial visualization of vessel traffic density highlighting high-activity maritime corridors and port congestion patterns.*
+
+---
+
+### 📊 Operational Risk vs Maintenance Behavior
+
+<img src="docs/screens/phase5/maintenance_vs_operational_risk.png" width="600">
+
+*Relationship between operational risk and maintenance patterns, supporting predictive maintenance insights.*
+
+---
+
+### 🤖 Anomaly Detection (AI Model Output)
+
+<img src="docs/screens/phase5/anomaly_scatter_operational_vs_maintenance.png" width="600">
+
+*Isolation Forest model identifying anomalous vessel behavior based on operational and maintenance risk signals.*
+
+---
+
+### 📉 Anomaly Score Distribution
+
+<img src="docs/screens/phase5/anomaly_score_distribution.png" width="600">
+
+*Distribution of anomaly scores used to classify abnormal vessel activity.*
+
+---
+
+### ⚠️ Combined Risk Monitoring
+
+<img src="docs/screens/phase5/combined_risk_alerts.png" width="600">
+
+*Integrated risk scoring system combining operational, weather, and maintenance factors into actionable alerts.*
+
+---
+
+### 🔗 Risk Correlation Analysis
+
+<img src="docs/screens/phase5/risk_correlation_matrix.png" width="600">
+
+*Correlation matrix revealing relationships between key risk variables and system dynamics.*
+
+---
+
+### 🚢 High-Risk Vessel Prioritization
+
+<img src="docs/screens/phase5/top10_critical_vessels.png" width="600">
+
+*Identification and ranking of the most critical vessels based on aggregated risk indicators.*
+---
+
+# 📊 Why It Matters
+
+This type of system can help maritime organizations:
+
+- reduce fuel and operational costs  
+- improve safety and incident prevention  
+- prioritize maintenance and inspections  
+- support data-driven decision making  
+
+---
+
+# 🧠 Core Capabilities
+
+- 🚢 **AIS Traffic Analysis** → vessel movement & port activity  
+- 🌦️ **Weather Impact Analysis** → environmental influence  
+- 🛠️ **Maintenance Risk Modeling** → predictive insights  
+- 🗺️ **GIS Spatial Analysis** → routes, ports, geographic risks  
+- 🤖 **Anomaly Detection** → Isolation Forest model  
+- ⚠️ **Risk Scoring System** → unified operational risk indicator  
+- 📊 **Fleet Risk Dataset** → structured intelligence output  
+
+---
+
+# 🏗️ Project Architecture
 
 The project is structured as a complete data pipeline:
 
 ## Phase 0 — GIS Setup
-- Base maps and port layers  
-- Spatial data integration  
-**Outputs:** Base maps, port shapefiles, initial GIS validation  
+- Base maps and spatial layers  
+- Port infrastructure mapping  
 
-## Phase 1 — Data Import, GIS Integration & EDA
-- AIS, weather, and maintenance data analysis  
-- Initial statistics, visualizations, and thematic mapping  
-**Outputs:** EDA notebooks, AIS/Weather/Maintenance charts, thematic maps  
+## Phase 1 — Data Analysis (EDA)
+- AIS, weather, maintenance exploration  
+- statistical analysis and mapping  
 
-## Phase 2 — Data Cleaning & Preprocessing
-- Data cleaning and filtering  
-- Timestamp conversion and rounding  
-- Feature engineering for modeling  
-**Outputs:** Cleaned CSVs, GIS-ready shapefiles, intermediate datasets  
+## Phase 2 — Data Processing
+- cleaning and preprocessing  
+- feature engineering  
 
-## Phase 3 — SQL Integration & KPI Visualization
-- Relational schema design  
-- KPI extraction and querying  
-**Outputs:** SQL staging tables, normalized schema, KPI CSVs, Google Sheets charts  
+## Phase 3 — SQL & KPI Layer
+- relational schema design  
+- KPI extraction  
 
-## Phase 4 — Operational Risk Dashboard & GIS/AI Integration
-- Operational risk scoring  
-- Maintenance and weather risk modeling  
-- Combined risk score calculation  
-**Outputs:** Enhanced dataset (`AIS_Tableau_Final_Operational_Enhanced.csv`), Tableau dashboards, KPI tiles  
+## Phase 4 — Risk Modeling
+- operational + environmental risk scoring  
+- dashboard-ready datasets  
 
-## Phase 5 — AI Anomaly Detection & Fleet Risk Intelligence
-- Anomaly detection using Isolation Forest  
-- Anomaly scoring and classification  
-- Fleet-level intelligence dataset creation  
-- Risk prioritization and ranking  
-**Outputs:** `fleet_risk_intelligence.csv`, anomaly & risk visualizations, portfolio-ready charts  
+## Phase 5 — AI & Anomaly Detection
+- Isolation Forest model  
+- fleet risk intelligence dataset  
 
 ---
 
-## 📊 Quick Stats
+# 📊 Key Metrics
 
-| Metric | Count |
-|--------|-------|
-| Vessels analyzed | 158 |
-| AIS records | ~19,700 |
-| Weather observations | 744 |
-| Maintenance events | 5 |
-| Anomalies detected | 12 |
+- **158 vessels analyzed**  
+- **~19,700 AIS records**  
+- **744 weather observations**  
+- **12 anomalies detected**  
 
 ---
 
-## 🧪 Data Sources
+# 🧪 Data Sources
 
-- **AIS Data** — Vessel traffic data (Port of Livorno)  
-- **Weather Data** — Historical weather (Open-Meteo API)  
-- **Maintenance Data** — Simulated dataset for modeling  
-- **Ports Dataset** — Natural Earth shapefiles  
+- AIS Data — Port of Livorno  
+- Weather Data — Open-Meteo API  
+- Maintenance Data — simulated dataset  
+- Ports Dataset — Natural Earth  
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Tech Stack
 
-**Geospatial Analysis**  
-- ArcGIS Pro  
-- GeoPandas  
-- Pyogrio  
-
-**Data & Analytics**  
+## Data & Analytics
 - Python (Pandas, NumPy)  
-- SQL (PostgreSQL, pgAdmin)  
+- SQL (PostgreSQL)  
 
-**Machine Learning**  
+## Machine Learning
 - Scikit-learn (Isolation Forest)  
 - Random Forest  
 - XGBoost  
 
-**Visualization**  
+## Geospatial
+- ArcGIS Pro  
+- GeoPandas  
+
+## Visualization
+- Tableau  
 - Matplotlib  
 - Seaborn  
-- Tableau Public  
-- GIS mapping tools  
 
 ---
 
-## 📈 Outputs & Deliverables
+# 📈 Outputs
 
-- 📊 Risk dashboards (Tableau & Python)  
-- 🗺️ GIS-based spatial visualizations  
-- 📉 Statistical analysis and charts  
-- 🤖 Anomaly detection results  
-- 📁 Fleet risk intelligence dataset  
-
----
-
-## 🔬 Methodology Highlights
-
-- Multi-source data integration (AIS + weather + maintenance)  
-- Feature engineering for risk modeling  
-- Weighted scoring system for combined risk indicators  
-- Unsupervised learning for anomaly detection  
-- Visual analytics for interpretability  
+- 📊 Interactive dashboards (Tableau)  
+- 🗺️ GIS visualizations (routes, ports, risk areas)  
+- 🤖 anomaly detection results  
+- 📁 fleet risk intelligence dataset  
 
 ---
 
-## 🎯 Applications
-
-This project is relevant for:
-
-- Port authorities  
-- Maritime logistics companies  
-- Smart port initiatives  
-- Maritime data analytics roles  
-- AI applications in transportation systems  
-
----
-
-## 📊 Repository Structure
+# 📂 Repository Structure
 
 HarborFlow_Fresh/
 │
@@ -171,36 +220,40 @@ HarborFlow_Fresh/
 └── README.md
 
 
-> Large GIS files (.aprx, .gdb) are excluded to keep the repository lightweight.
+---
+
+# 🔬 Methodology
+
+- multi-source data integration  
+- feature engineering for risk modeling  
+- weighted scoring system  
+- unsupervised learning (anomaly detection)  
+- visual analytics for interpretability  
 
 ---
 
-## 🔬 Reproducibility
+# 🎯 Applications
 
-- All steps are documented in **notebooks/**  
-- Python scripts in **src/** allow pipeline re-run  
-- CSV exports and shapefiles in **data/processed/**  
-- Tableau dashboards in **tableau/**  
-
-This ensures the full workflow can be reproduced from raw data to final AI-enhanced risk intelligence.
-
----
-
-## 📌 Project Status
-
-**Status:** ✅ Completed  
-
-All phases — including anomaly detection and fleet risk intelligence — have been fully implemented and validated.
+- maritime logistics companies  
+- port authorities  
+- smart port systems  
+- geospatial analytics roles  
+- data analyst / AI roles in transportation  
 
 ---
 
-## 📬 About
+# 📌 Status
 
-HarborFlow is a **portfolio project** demonstrating the integration of:
+✅ Completed — end-to-end pipeline fully implemented  
 
-- GIS systems  
-- Data engineering  
-- Machine learning  
-- Operational risk analysis  
+---
 
-It reflects a complete workflow from raw data to actionable intelligence in a maritime context.
+# 👤 About
+
+This project demonstrates:
+
+- end-to-end data analysis workflow  
+- integration of GIS + analytics + machine learning  
+- ability to translate data into business insights  
+
+---
